@@ -72,6 +72,7 @@ const Desc = styled.p`
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
+    
 `;
 
 const Button = styled.button`
@@ -79,8 +80,9 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+
 `;
-p
+
 
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
