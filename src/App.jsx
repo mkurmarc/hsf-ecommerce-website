@@ -7,7 +7,7 @@ import Cart from "./pages/Cart";
 import Newsletter from "./components/Newsletter";
 
 const App = () => {
-  return <Login />;
+  return <Register />;
 };
 
 export default App;

@@ -60,7 +60,6 @@ const Newsletter = () => {
                     <Send/>
                 </Button>
             </InputContainer>
-            <Footer />
         </Container>
     )
 }

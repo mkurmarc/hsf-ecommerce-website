@@ -20,7 +20,8 @@ const Wrapper = styled.div`
     width: 25%;
     padding: 20px;
     background-color: white;
-    ${mobile({ display: "none" })}
+    text-align: center;
+    ${mobile({ width: "75%" })}
 `;
 
 const Title = styled.h1`
@@ -48,6 +49,7 @@ const Button = styled.button`
     color: white;
     cursor: pointer;
     margin-bottom: 10px;
+    margin: 0 auto;
 
     &:disabled {
     color: green;
@@ -77,7 +79,6 @@ const Login = () => {
                     <Button>LOGIN</Button>
                     <Link>DO NOT REMEMBER PASSWORD?</Link>
                     <Link>CREATE A NEW ACCOUNT</Link>
-
                 </Form>
             </Wrapper>
         </Container>

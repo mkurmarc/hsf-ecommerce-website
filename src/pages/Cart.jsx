@@ -1,13 +1,15 @@
 import { Add, Remove } from '@material-ui/icons';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import Announcement from '../components/Announcement'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import { mobile } from '../responsive';
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
     padding: 20px;
+    ${mobile({ padding: "10px" })}
 `;
 
 const Title = styled.h1`
@@ -26,14 +28,14 @@ const TopButton = styled.button`
     padding: 10px;
     font-weight: 600;
     cursor: pointer;
-    border: ${props=>props.type === "filled" && "none"};
+    border: ${(props) => props.type === "filled" && "none"};
     background-color: ${(props) => 
         props.type === "filled" ? "black" : "transparent"};
     color: ${(props) =>props.type === "filled" && "white"};    
 `;
 
 const TopTexts = styled.div`
-
+    ${mobile({ display: "none" })}
 `;
 
 const TopText = styled.span`
@@ -45,6 +47,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
+    ${mobile({ flexDirection: "column" })}
 `;
 
 const Info = styled.div`
@@ -54,11 +57,12 @@ const Info = styled.div`
 const Product = styled.div`
     display: flex;
     justify-content: space-between;
+    ${mobile({ flexDirection: "column" })}
 `;
 
 const ProductDetail = styled.div`
     flex: 2;
-        display: flex;
+    display: flex;
 `;
 
 const Image = styled.img`
@@ -69,7 +73,7 @@ const Details = styled.div`
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-space-around;
+    justify-content: space-around;
 `;
 
 const ProductName = styled.span``;
@@ -102,17 +106,20 @@ const ProductAmountContainer = styled.div`
 const ProductAmount = styled.div`
     font-size: 24px;
     margin: 5px;
+    ${mobile({ margin: "5px 15px" })}
 `;
 
 const ProductPrice = styled.div`
     font-size: 30px;
     font-weight: 200;
+    ${mobile({ marginBottom: "20px" })}
+
 `;
 
 const Hr = styled.hr`
     background-color: #eee;
     border: none;
-    height: 1;
+    height: 1px;
 `;
 
 const Summary = styled.div`
@@ -120,6 +127,7 @@ const Summary = styled.div`
     border: 0.5px solid lightgray;
     border-radius: 10px;
     padding: 20px;
+    height: 50vh;
 `;
 
 const SummaryTitle = styled.h1`
@@ -129,17 +137,18 @@ const SummaryTitle = styled.h1`
 const SummaryItem = styled.h1`
     margin: 30px 0px;
     display: flex;
-    justify-content: space-space-between;
-    font-weight: ${props => props.type === "total" && "500"};
-    font-size: ${props => props.type === "total" && "24px"};
+    justify-content: space-between;
+    font-weight: ${(props) => props.type === "total" && "500"};
+    font-size: ${(props) => props.type === "total" && "24px"};
 `;
 
 const SummaryItemText = styled.span``;
+
 const SummaryItemPrice = styled.span``;
 
 const Button = styled.button`
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background-color: black;
     color: white;
     font-weight: 600;
@@ -166,7 +175,7 @@ const Cart = () => {
                     <Info>
                         <Product>
                             <ProductDetail>
-                                <Image src=" "/>
+                                <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1592920567-mid-century-double-pop-up-coffee-table-walnut-white-marble-2-c.jpg"/>
                                 <Details>
                                     <ProductName><b>Product:</b> JESSIE THUNDER SHOES</ProductName>
                                     <ProductId><b>ID:</b> 93443432423</ProductId>
@@ -180,13 +189,13 @@ const Cart = () => {
                                     <ProductAmount>2</ProductAmount>
                                     <Remove />
                                 </ProductAmountContainer>
-                                <ProductPrice>$30</ProductPrice>
+                                <ProductPrice>$ 30</ProductPrice>
                             </PriceDetail>
                         </Product>
                         <Hr />
                         <Product>
                             <ProductDetail>
-                                <Image src=" "/>
+                                <Image src="https://cdn-images.article.com/products/SKU3222V1/2890x1500/image29111.jpg?fit=max&w={width}&q={q}"/>
                                 <Details>
                                     <ProductName><b>Product:</b> Cool T-Shirt</ProductName>
                                     <ProductId><b>ID:</b> 4533934423</ProductId>
@@ -200,7 +209,7 @@ const Cart = () => {
                                     <ProductAmount>2</ProductAmount>
                                     <Remove />
                                 </ProductAmountContainer>
-                                <ProductPrice>$30</ProductPrice>
+                                <ProductPrice>$ 30</ProductPrice>
                             </PriceDetail>
                         </Product>
                     </Info>
