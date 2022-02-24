@@ -1,2 +1,10 @@
-Ecommerce web app made for Home Solutions Furniture that allows users to browse furniture products and purchase them. 
-Uses the MERN stack, which is MongoDB, Express, React, and Node.js 
+# hsf-ecommerce-website
+The frontend of an e-commerce web application made that allows users to browse 
+products and purchase them. Currently, working on the backend API that will
+compliment this app. 
+
+### Technologies
+- React.js
+- JSX
+- CSS
+
