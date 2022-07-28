@@ -81,7 +81,7 @@ const Footer = () => {
     return (
         <Container>
             <Left>
-                <Logo>LAMA.</Logo>
+                <Logo>HSF</Logo>
                 <Desc>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem 
                     error est provident sint corrupti commodi facilis earum, qui, 

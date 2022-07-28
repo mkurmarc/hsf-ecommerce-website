@@ -78,7 +78,7 @@ const Navbar = () => {
                         <Search placeholder="Search" style={{color:"gray", fontSize:16}}/>
                     </SearchContainer>
                 </Left>
-                <Center><Logo>LAMA.</Logo></Center>
+                <Center><Logo>Home Solutions Furniture</Logo></Center>
                 <Right>
 
                     <MenuItem>REGISTER</MenuItem>
