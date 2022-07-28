@@ -128,17 +128,17 @@ const Product = () => {
             <Announcement />
             <Wrapper>
                 <ImgContainer>
-                    <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+                    <Image src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>Denim Jumpsuit</Title>
+                    <Title>3 Piece Bedroom Set</Title>
                     <Desc>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Eos necessitatibus, odio, labore eius cumque ex accusantium 
                         cupiditate velit fugit animi eveniet deserunt mollitia 
                         tenetur excepturi consequuntur quaerat enim atque doloremque
                     </Desc>
-                    <Price>$ 20</Price>
+                    <Price>$ 2000</Price>
                     <FilterContainer>
                         <Filter>
                             <FilterTitle>Color</FilterTitle>
@@ -149,11 +149,9 @@ const Product = () => {
                         <Filter>
                             <FilterTitle>Size</FilterTitle>
                             <FilterSize>
-                                <FilterSizeOption>XS</FilterSizeOption>
-                                <FilterSizeOption>S</FilterSizeOption>
-                                <FilterSizeOption>M</FilterSizeOption>
-                                <FilterSizeOption>L</FilterSizeOption>
-                                <FilterSizeOption>XL</FilterSizeOption>
+                                <FilterSizeOption>Full</FilterSizeOption>
+                                <FilterSizeOption>Queen</FilterSizeOption>
+                                <FilterSizeOption>King</FilterSizeOption>
                             </FilterSize>
                         </Filter>
                     </FilterContainer>

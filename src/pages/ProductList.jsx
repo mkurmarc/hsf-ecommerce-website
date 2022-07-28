@@ -45,22 +45,21 @@ const ProductList = () => {
         <Container>
             <Navbar />
             <Announcement />
-            <Title>Dresses</Title>
+            <Title>All Products</Title>
             <FilterContainer>
                 <Filter>
                     <FilterText>Filter Products</FilterText>
                     <Select>
                         <Option disabled selected>
-                            Color
+                            Room
                         </Option>
-                        <Option>White</Option>
-                        <Option>Black</Option>
-                        <Option>Red</Option>
-                        <Option>Blue</Option>
-                        <Option>Yellow</Option>
-                        <Option>Green</Option>
+                        <Option>Dining</Option>
+                        <Option>Living</Option>
+                        <Option>Bedroom</Option>
+                        <Option>Kitchen</Option>
+                        <Option>Furnishings</Option>
                     </Select>
-                    <Select>
+                    {/* <Select>
                         <Option disabled selected>
                             Size
                         </Option>
@@ -69,7 +68,7 @@ const ProductList = () => {
                         <Option>M</Option>
                         <Option>L</Option>
                         <Option>XL</Option>
-                    </Select>
+                    </Select> */}
                 </Filter>
                 <Filter>
                     <FilterText>Sorting Products</FilterText>
